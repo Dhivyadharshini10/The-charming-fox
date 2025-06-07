@@ -1355,3 +1355,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  min-height: 48px;
+}
+
+.product-price {
+  color: green;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.error {
+  color: red;
+}
+.productlist{
+    padding-top: 500px;
+}
