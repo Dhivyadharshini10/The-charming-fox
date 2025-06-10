@@ -95,3 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   displayProducts();
 });
+let zoomLevel = 1;
+
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey) {
+    if (e.key === '+') {
+      zoomLevel += 0.1;
+    } else if (e.key === '-') {
+      zoomLevel -= 0.1;
+    } else if (e.key === '0') {
+      zoomLevel = 1; // Reset zoom
+    }
+    document.body.style.transform = `scale(${zoomLevel})`;
+    document.body.style.transformOrigin = '0 0'; // Anchor zoom at the top-left
+  }
+});
