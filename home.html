@@ -33,6 +33,20 @@
  
     <script src="product.js"></script>
 <script src="script.js"></script>
+<img
+  src="images/dress1-medium.webp"
+  srcset="
+    images/dress1-small.webp 480w,
+    images/dress1-medium.webp 800w,
+    images/dress1-large.webp 1200w
+  "
+  sizes="(max-width: 600px) 480px, (max-width: 1024px) 800px, 1200px"
+  alt=""
+  loading="lazy"
+/>
+<link rel="stylesheet" href="style.min.css" />
+<script src="scripts/main.min.js" defer></script>
+
 
 <!-- Navbar Start -->
 <!-- Navbar Start -->
@@ -53,13 +67,11 @@
         <a href="productdetail.html" class="nav-link">Products</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Accessories</a>
+        <a href="collection.html" class="nav-link">Accessories</a>
       </li>
+      
       <li class="nav-item">
-        <a href="#" class="nav-link">Order</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </li>
     </ul>
 

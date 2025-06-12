@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCF</title>
+     <link rel="icon" href="tcf logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <style>
+       .products-box {
+  position: relative; /* Ensure the parent element has a position context */
+}
+
+.products-box button {
+  padding: 10px 20px; /* Use fixed units like px for consistent sizing */
+  margin-top: 10px;
+  color: #1d232c;
+  background-color: #f0f0f0; /* Add a background color for visibility */
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translateY(-50%); /* Center vertically */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Indicate clickable button */
+}
+
+        
+    </style>
+
+ 
+<nav class="navbar">
+    <h1>The Charming Fox</h1>
+
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="home.html">Home</a></p>
+        <p class="navbar-link"><a href="collection.html">Accessories</a></p>
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="navbar-menu-toggle" onclick="shownavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<div class="side-navbar" onclick="closenavbar()">
+    <p style="text-align: right;">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+
+</div>
+ 
+ <!--product-->
+ <div class="product-section">
+    <form class="product-search">
+        <input type="text" id="search" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </form>
+
+
+    <div class="products" id="products">
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/c5/bb/35/c5bb35b857ad0669a88baa720401cde4.jpg" width="200px"
+                height="200px">
+            <p>Frock</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/16/78/64/1678643e44dab7c566f4d9f97e0c8311.jpg" width="200px"
+                height="200px">
+            <p>Pink shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/b9/bc/f5/b9bcf52cc63d71addff3004a1bcbe843.jpg" width="200px"
+                height="200px">
+            <p>Casual</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/ce/28/06/ce2806ed5197fb607f973288a32ce6db.jpg" width="200px"
+                height="200px">
+            <p>blazzer</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/89/02/b1/8902b190e0669d43d2b1d150845a7ec1.jpg" width="200px"
+                height="200px">
+            <p>long dress</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/4c/53/20/4c53209a2b9a0ce6c2856a43317599e9.jpg" width="200px"
+                height="200px">
+            <p>Hoodie</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/1b/7f/6a/1b7f6a7807295cf75cb4f8d3be62b004.jpg" width="200px"
+                height="200px">
+            <p>braclet</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/37/b4/ff/37b4ff12b85b2174104b317de7ac35ee.jpg" width="200px"
+                height="200px">
+            <p>Celine jacket</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+       
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/c2/df/62/c2df62edf38be82526e7c2eae2412347.jpg" width="200px"
+                height="200px">
+            <p>Tuxedo</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/50/09/8f/50098f78480bb0c2ea97c6b5a4d44f2b.jpg" width="200px"
+                height="200px">
+            <p>Shein ring</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/61/82/95/618295ee240a5435ab94bb62d50bae0d.jpg" width="200px"
+                height="200px">
+            <p>Red shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/c2/92/41/c29241eba0cebfdaad33e334b612d46b.jpg" width="200px"
+                height="200px">
+            <p>CK shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/2b/ec/d5/2becd577c15198a6c53c068bc179a2ca.jpg" width="200px"
+                height="200px">
+            <p>Hoodie</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/a5/bd/87/a5bd87ac99a9b34d919c2fa41fbe5fc6.jpg" width="200px"
+                height="200px">
+            <p>Sweat shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/37/c4/c0/37c4c005d25ec43aaa3fa14c0b62c490.jpg" width="200px"
+                height="200px">
+            <p>Tuxedo</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/a5/90/a5/a590a5a24010238388d4f60f667827d8.jpg" width="200px"
+                height="200px">
+            <p>package</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/62/7e/32/627e3237fa521c9874c09298bf687da2.jpg" width="200px"
+                height="200px">
+            <p>Ring</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/b0/23/dc/b023dc7c81a32a997bb3d5c7ace2e8e3.jpg" width="200px"
+                height="200px">
+            <p>Bracelet</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/11/f3/9c/11f39c5850900d7af92f3364cf04845c.jpg" width="200px"
+                height="200px">
+            <p>Saree</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/9f/9f/37/9f9f37fd5a641ce40af36498d0f77ff9.jpg" width="200px"
+                height="200px">
+            <p>Cotton shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/1f/1d/fb/1f1dfbae6f0b9ed4e36c5b7d96cbd25d.jpg" width="200px"
+                height="200px">
+            <p>Solid shirts</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="  https://i.pinimg.com/736x/bd/51/f8/bd51f858b8dbc5f43b85a9c6fb0d3ea9.jpg" width="200px"
+                height="200px">
+            <p>Bunny Sweat shirts</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="  https://i.pinimg.com/736x/cf/94/ce/cf94cea6c3e7a49a6cd4af0ef38c9606.jpg " width="200px"
+                height="200px">
+            <p>Bomber jacket</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="products-box">
+            <img src="   https://i.pinimg.com/736x/0b/25/cc/0b25cc902241e906714c3c574633af62.jpg " width="200px"
+                height="200px">
+            <p>Windbreaker coat</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="https://i.pinimg.com/736x/4e/26/88/4e2688f5c24a61e8df73d590564aa89b.jpg" width="200px"
+                height="200px">
+            <p>Men's formal</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="  https://i.pinimg.com/736x/e3/a2/62/e3a262dfd2ba58a283d94cd9b80c09b4.jpg" width="200px"
+                height="200px">
+            <p>Casual wear</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src=" https://i.pinimg.com/736x/89/01/05/8901054a23720d082baf205759ef5c61.jpg" width="200px"
+                height="200px">
+            <p>Men's black shirt</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="products-box">
+            <img src="  https://i.pinimg.com/736x/c8/91/58/c89158cd26b24a94e8e819659bc5c8d0.jpg" width="200px"
+                height="200px">
+            <p></p>Black wear</p>
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      
+       
+      
+
+      
+       
+      
+      
+
+    </div>
+<script src="container.js"></script>
+<script src="index.js"></script>
+
+<script src="box.js"></script>
+<script src="sample.js"></script>
+
+
+
+
+</div>
+</div>
+</body>
