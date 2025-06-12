@@ -110,3 +110,35 @@ document.addEventListener('keydown', (e) => {
     document.body.style.transformOrigin = '0 0'; // Anchor zoom at the top-left
   }
 });
+<script>
+  const signupForm = document.getElementById('signupForm');
+
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        alert("Signup successful!");
+        window.location.href = "home.html"; // redirect after signup
+      })
+      .catch((error) => {
+        alert("Error: " + error.message);
+      });
+  });
+  <script>
+  function logout() {
+    firebase.auth().signOut()
+      .then(() => {
+        alert("Logged out");
+        window.location.href = "login.html";
+      })
+      .catch((error) => {
+        alert("Logout error: " + error.message);
+      });
+  }
+</script>
+
+</script>
